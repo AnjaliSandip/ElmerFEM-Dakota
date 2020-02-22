@@ -7,7 +7,7 @@ with examples have been provided.
 If you use this program, please cite Sandip, Anjali, "An open-source
 integrated computational environment for multi-physics/phase simulation, 
 optimization and uncertainty quantification." (2019). Mechanical Engineering
-Posters and Presentation. 1. https://commons.und.edu/me-pp/2
+Posters and Presentation. 2. https://commons.und.edu/me-pp/2
 
 About:
 This program is mantained by Anjali Sandip.
