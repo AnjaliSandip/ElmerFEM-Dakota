@@ -1,0 +1,44 @@
+environment
+  tabular_data
+      tabular_data_file = 'elmer_dakota_lhs_tabular_10percenterror.dat'
+
+method
+  sampling 
+    sample_type lhs
+    samples 2
+    seed 1987
+    num_probability_levels = 0 13 13
+    probability_levels = 0.01 0.05 0.1:0.1:0.9 0.95 0.99
+                         0.01 0.05 0.1:0.1:0.9 0.95 0.99
+    response_levels = 0 2.5e-5 350e6
+
+   
+              
+                 
+  
+variables
+  normal_uncertain 3
+      descriptors 'L' 'w' 't'
+      means 0.127 0.05 0.05
+      std_deviations 0.0127 0.005 0.005
+      
+  continuous_state 4
+  descriptors 'E' 'p' 'X' 'Y'
+  initial_state 2.0e11 8000  6.0e5 8.6e5
+  
+
+responses
+  response_functions 3
+  descriptors 'mass' 'displacement' 'stress'
+  no_gradients
+  no_hessians
+
+
+interface
+  analysis_drivers 'ed_LHSsampling_cantilever_driver.sh'                        
+    fork
+     parameters_file='params.in'
+     results_file= 'results.out'
+     file_save
+     file_tag
+
