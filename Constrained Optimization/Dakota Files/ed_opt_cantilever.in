@@ -1,0 +1,37 @@
+# Constrained optimization of cantilever beam
+
+environment
+  tabular_data
+    tabular_data_file 'ed_opt_cantilever_conmin_mfd.dat'
+
+method
+conmin_mfd
+
+variables
+  continuous_design 2
+    descriptors  'w' 't'
+    initial_point 0.05   0.05
+    upper_bounds  0.1   0.1
+    lower_bounds  0.01  0.01
+
+  continuous_state 5
+  descriptors 'L' 'E' 'p' 'X' 'Y'
+  initial_state 0.127 2.0e11 8000 6e5 8e5
+
+interface
+    analysis_drivers 'ed_CO_cantilever_driver.sh'                       
+    fork
+	 parameters_file='params.in'
+     results_file='/home/caelinux2/dakota_gui_workspace/Constrained_Optimization/results.out'
+     file_save
+     file_tag
+    deactivate active_set_vector
+  asynchronous evaluation_concurrency 4
+  
+responses
+  descriptors 'mass' 'displacement' 'stress'
+  objective_functions 1
+  nonlinear_inequality_constraints 2
+     nonlinear_inequality_upper_bounds 2.6e-5 350e6
+  numerical_gradients
+  numerical_hessians
