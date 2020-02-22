@@ -1,2 +1,31 @@
-# FE-Data-Analytics
-Finite element analysis, Data analytics, Open-Source
+This program, Elmer FEM-Dakota interface, is released under license GNU GENERAL
+PUBLIC LICENSE Version 3, 29 June 2007
+
+A generic interface script (shell) for coupling Elmer FEM and Dakota along 
+with examples have been provided.
+
+If you use this program, please cite Sandip, Anjali, "An open-source
+integrated computational environment for multi-physics/phase simulation, 
+optimization and uncertainty quantification." (2019). Mechanical Engineering
+Posters and Presentation. 1. https://commons.und.edu/me-pp/2
+
+About:
+This program is mantained by Anjali Sandip.
+
+ - Sandia Dakota version 6.10
+ - Elmer version 8.1
+ - Operating system: Linux
+
+If you have questions/would like to collaborate/find this software helpful, 
+feel free to contact me at asandip785@gmail.com
+
+Capabilities:
+This program integrates the capabilities of Elmer FEM and Sandia Dakota. 
+It provides a framework for multi-physics/phase simulations, 
+uncertainty quatification and optimization.
+
+
+
+
+
+
