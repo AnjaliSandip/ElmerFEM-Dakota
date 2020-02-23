@@ -4,10 +4,7 @@ PUBLIC LICENSE Version 3, 29 June 2007
 A generic interface script (shell) for coupling Elmer FEM and Dakota along 
 with examples have been provided.
 
-If you use this program, please cite Sandip, Anjali, "An open-source
-integrated computational environment for multi-physics/phase simulation, 
-optimization and uncertainty quantification." (2019). Mechanical Engineering
-Posters and Presentation. 2. https://commons.und.edu/me-pp/2
+If you use this program, please cite this repository -- Sandip, A. 2019, FE-Data Anaytics, v1.0, Zenodo, DOI: 10.5281/zenodo.3679488 
 
 About:
 This program is mantained by Anjali Sandip.
