@@ -1,5 +1,5 @@
 This program, Elmer FEM-Dakota interface, is released under license GNU GENERAL
-PUBLIC LICENSE Version 3, 29 June 2007
+PUBLIC LICENSE Version 3, 29 June 2007.
 
 A generic interface script (shell) for coupling Elmer FEM and Dakota along 
 with examples have been provided.
