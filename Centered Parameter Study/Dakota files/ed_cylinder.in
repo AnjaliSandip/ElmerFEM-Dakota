@@ -1,0 +1,34 @@
+environment
+  tabular_data
+      tabular_data_file = 'Drag_Force.dat'
+
+method
+  centered_parameter_study
+     step_vector 0.3
+     steps_per_variable 2 
+
+
+   
+              
+variables
+   continuous_design = 1
+   initial_point 0.9
+   descriptors  'umax' 
+  
+
+responses
+  response_functions 1
+  descriptors 'drag' 
+  no_gradients
+  no_hessians
+
+
+interface
+  analysis_drivers 'ed_cylinder_driver.sh'                        
+    fork
+	 parameters_file='params.in'
+     results_file='/home/caelinux2/caelinux/dakota_gui_workspace/ED_Cylinder/results.out'
+     file_save
+     file_tag
+     
+  
