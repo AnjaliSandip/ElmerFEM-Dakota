@@ -20,7 +20,7 @@ feel free to contact me at asandip785@gmail.com
 Capabilities:
 This program integrates the capabilities of Elmer FEM and Sandia Dakota. 
 It provides a framework for multi-physics/phase simulations, 
-uncertainty quatification and optimization.
+uncertainty quantification and optimization.
 
 
 
