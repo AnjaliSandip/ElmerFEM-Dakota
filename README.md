@@ -8,7 +8,7 @@ If you use this program, please cite this repository -- Sandip, A. 2019, ElmerFE
 
 
 About:
-This program is mantained by Anjali Sandip.
+This program is maintained by Anjali Sandip.
 
  - Sandia Dakota version 6.10
  - Elmer version 8.1
