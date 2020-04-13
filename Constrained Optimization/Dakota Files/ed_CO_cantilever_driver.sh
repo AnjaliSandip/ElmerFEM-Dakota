@@ -38,14 +38,14 @@ cp /Dakota/Gui/Workspace/beam3d.grd /Elmer/Workspace/beam3d.grd
 ##
 ###############################################################################
 
-##Create new mesh (and teh corresponding mesh files) for the new geometry - create beam3d folder
+##Create new mesh (and the corresponding mesh files) for the new geometry - create beam3d folder
 cd /Location/to/Elmer/Case/File
 ElmerGrid 1 2 beam3d.grd
 
 #Transfer the revised beam3d.grd files to the beam3d folder
 cp /Elmer/Workspace/beam3d.grd  /Elmer/Workspace/beam3d/beam3d.grd 
 
-##Open and Elmer project - beam3d - with revised geometry and mesh files
+##Open Elmer project - beam3d - with revised geometry and mesh files
 cd /Elmer/Workspace/beam3d
 ElmerSolver case.sif
 
