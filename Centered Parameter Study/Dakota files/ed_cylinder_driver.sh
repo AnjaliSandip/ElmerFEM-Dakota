@@ -29,7 +29,7 @@ results=$2
 ###############################################################################
 
 dprepro $params case.template case.sif
-cp /home/caelinux2/caelinux/dakota_gui_workspace/ED_Cylinder/case.sif   /home/caelinux2/Desktop/Elmer/ElmerTutorialFilesGUI/VortexShedding/case.sif
+cp /Dakota/Gui/Workpsace/case.sif   /Elmer/Workspace/case.sif
 
 ############################################################################### 
 ##
@@ -38,7 +38,7 @@ cp /home/caelinux2/caelinux/dakota_gui_workspace/ED_Cylinder/case.sif   /home/ca
 ###############################################################################
 
 ##Open and run Elmer project - beam3d - with revised geometry and mesh files
-cd /home/caelinux2/Desktop/Elmer/ElmerTutorialFilesGUI/VortexShedding/
+cd /Location/to/Elmer/Case/File
 ElmerSolver case.sif
 
 
@@ -51,5 +51,5 @@ ElmerSolver case.sif
 ###############################################################################
 
 
-cp  /home/caelinux2/Desktop/Elmer/ElmerTutorialFilesGUI/VortexShedding/dragforce.txt $results
+cp  /Elmer/Workspace/dragforce.txt $results
 
