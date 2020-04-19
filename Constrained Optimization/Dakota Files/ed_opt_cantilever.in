@@ -22,7 +22,7 @@ interface
     analysis_drivers 'ed_CO_cantilever_driver.sh'                       
     fork
 	 parameters_file='params.in'
-     results_file='/home/caelinux2/dakota_gui_workspace/Constrained_Optimization/results.out'
+     results_file='/Dakota/Gui/Workspace/results.out'
      file_save
      file_tag
     deactivate active_set_vector
