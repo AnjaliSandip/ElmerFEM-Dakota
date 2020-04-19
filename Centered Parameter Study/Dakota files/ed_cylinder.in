@@ -27,7 +27,7 @@ interface
   analysis_drivers 'ed_cylinder_driver.sh'                        
     fork
 	 parameters_file='params.in'
-     results_file='results.out'
+     results_file='/Dakota/Gui/Workspace/results.out'
      file_save
      file_tag
      
