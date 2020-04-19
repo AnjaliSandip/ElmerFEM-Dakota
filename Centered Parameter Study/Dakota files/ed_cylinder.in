@@ -27,7 +27,7 @@ interface
   analysis_drivers 'ed_cylinder_driver.sh'                        
     fork
 	 parameters_file='params.in'
-     results_file='/home/caelinux2/caelinux/dakota_gui_workspace/ED_Cylinder/results.out'
+     results_file='results.out'
      file_save
      file_tag
      
