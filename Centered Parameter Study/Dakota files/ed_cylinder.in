@@ -1,0 +1,39 @@
+environment
+#Store drag force in tabular data file
+  tabular_data
+      tabular_data_file = 'Drag_Force.dat'
+
+method
+#Define data analysis -- centered parameter study
+  centered_parameter_study
+     step_vector 0.3            #increment size
+     steps_per_variable 2       #number of increments
+
+
+   
+              
+variables
+#Define input parameter/s
+   continuous_design = 1        #Input parameter -- maximum velocity at cylinder inlet, umax -- varies continuosly
+   initial_point 0.9
+   descriptors  'umax' 
+  
+
+responses
+#Define output parameter -- Drag force at the last time step 
+  response_functions 1
+  descriptors 'Drag_Force' 
+  no_gradients
+  no_hessians
+
+
+interface
+#Define Dakota - Elmer interface
+  analysis_drivers 'ed_cylinder_driver.sh'                              #Calls the bash script that interfaces Dakota with Elmer                  
+    fork                                                                #Simulation interface type
+	 parameters_file='params.in'                                        #Dakota parameters file
+     results_file='/Dakota/Gui/Workspace/Dakota/Project/results.out'    #Dakota results file
+     file_save                                                          #Saves the parameter and results files
+     file_tag                                                           #Tags the saved parameter and results files -- params.in.1, params.in.2, results.out.2, results,out.2, etc.
+     
+  
