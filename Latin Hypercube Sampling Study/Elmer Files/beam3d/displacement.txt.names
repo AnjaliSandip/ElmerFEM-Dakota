@@ -1,9 +1,0 @@
-Elmer version: 8.4
-Elmer compilation date: 2018-12-27
-Solver input file: case.sif
-File started at: 2020/02/04 03:30:29
- 
-Variables in columns of matrix: ./displacement.txt
-   1: volume: displacement with density
-   2: max: displacement
-   3: max: stress_zz
