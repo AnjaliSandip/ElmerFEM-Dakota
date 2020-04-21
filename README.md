@@ -20,7 +20,7 @@ This program is maintained by Anjali Sandip.
  - Operating system: Linux
 
 If you have questions/would like to collaborate/find this software helpful, 
-feel free to contact me at asandip785@gmail.com
+you can reach me at asandip785@gmail.com
 
 
 
