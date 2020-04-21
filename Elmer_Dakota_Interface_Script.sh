@@ -13,7 +13,7 @@
 
 
 #!/bin/bash
-#This is a generic interface script for coupling Elmer with Dakota
+#This is a generic interface script for coupling ElmerFEM with Dakota
 
 # $1 and $2 are special variables in bash that contain the 1st and 2nd 
 # command line arguments to the script, which are the names of the
