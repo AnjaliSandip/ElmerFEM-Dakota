@@ -7,7 +7,8 @@ with examples have been provided.
 Capabilities:
 This program integrates the capabilities of Elmer FEM and Sandia Dakota. 
 It provides a framework for multi-physics/phase simulations, 
-uncertainty quantification, optimization and parameter studies.
+uncertainty quantification, optimization, surrogate modeling, parallel computing
+and parameter studies.
 
 If you use this program, please cite this repository -- Sandip, A. 2019, ElmerFEM-Dakota, v2.0, Zenodo,  DOI: 10.5281/zenodo.3679502 
 
@@ -19,7 +20,7 @@ This program is maintained by Anjali Sandip.
  - Elmer version 8.1
  - Operating system: Linux
 
-If you have questions/would like to collaborate/find this software helpful, 
+If you have questions/find this software helpful/would like to collaborate, 
 you can reach me at asandip785@gmail.com
 
 
