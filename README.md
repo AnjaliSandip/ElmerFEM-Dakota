@@ -21,7 +21,7 @@ This program is maintained by Anjali Sandip.
  - Operating system: Linux
 
 If you have questions/find this software helpful/would like to collaborate, 
-you can reach me at asandip785@gmail.com
+you can reach me at anjali.sandip@und.edu
 
 
 
