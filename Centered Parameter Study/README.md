@@ -6,7 +6,7 @@ This is a common benchmark problem in fluid-structure interaction problems [1].
  - Elmer solver: FlowSolve
  - Elmer files courtesy Elmer Tutorial Files GUI
    http://www.nic.funet.fi/pub/sci/physics/elmer/doc/   (For Elmer vortex shedding project description, refer to chapter 10 in ElmerTutorials.pdf file)
- - Boundary conditions: inlet (parabolic fully developed laminar velocity profile), no-slip walls and outlet (vertical component equal to zero). 
+ - Boundary conditions: inlet (parabolic fully developed laminar velocity profile), no-slip walls and outlet (vertical component of veocity equal to zero). 
  - Data analysis: Centered parameter study
    https://dakota.sandia.gov/sites/default/files/docs/6.10/html-ref/method-centered_parameter_study.html
  - Input parameter: Reynold's number (by varying the maximum velocity at the cylinder inlet) -- between 0 and 100.
