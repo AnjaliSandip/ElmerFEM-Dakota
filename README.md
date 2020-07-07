@@ -10,7 +10,7 @@ It provides a framework for multi-physics/phase simulations,
 uncertainty quantification, optimization, surrogate modeling, parallel computing
 and parameter studies.
 
-If you use this program, please cite this repository -- Sandip, A. 2019, ElmerFEM-Dakota, v2.0, Zenodo,  DOI: 10.5281/zenodo.3934329 
+If you use this program, please cite this repository -- Sandip, A. 2019, ElmerFEM-Dakota, v2.0, Zenodo,  DOI: 10.5281/zenodo.3679502
 
 
 About:
