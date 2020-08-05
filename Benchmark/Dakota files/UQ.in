@@ -1,0 +1,42 @@
+environment
+#Store results in tabular data file
+  tabular_data
+      tabular_data_file = 'numerical_MgDyn_lhs.dat'
+
+method
+#Define data analysis: Uncertainty quantification
+  sampling 
+    sample_type lhs                                                      #latin hypercube sampling
+    samples 400                                     
+    seed 1987
+    
+#number of probability levels for joule heating
+    num_probability_levels = 13                       
+    probability_levels = 0.01 0.05 0.1:0.1:0.9 0.95 0.99
+                       
+
+variables  
+#Define input parameter/s
+      normal_uncertain 2                                                 #uncertain input parameters assumed to follow normal distribution
+      descriptors 'r' 'sigma'                                            #input parameters: wire radius (m) and electric conductivity (A m-1 V-1)
+      means 2.0  57.59e6                          
+      std_deviations 0.2 2.0e6
+
+
+responses
+#Define output parameter
+  response_functions 1
+  descriptors 'joule_heating'                                            #Joule heating, max. field value (Watts)
+  no_gradients
+  no_hessians
+
+
+interface
+ fork                                                                    #Simulation interface type
+     analysis_drivers 'Wire_driver.sh'                                     #Calls the bash script that interfaces Dakota with Elmer Fem                     
+     parameters_file='params.in'                                         #Dakota parameters file
+     results_file='/Dakota/Gui/Workspace/Dakota/Project/results.out'     #Dakota results file
+     file_save                                                           #Parameters and results file for every function evaluation are saved and tagged
+     file_tag
+     asynchronous                                                        #Run 4 function evaluations simultaneously
+     evaluation_concurrency = 4

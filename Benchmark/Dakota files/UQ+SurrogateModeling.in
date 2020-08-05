@@ -1,0 +1,66 @@
+environment
+#Store results in tabular data file
+  tabular_data
+  tabular_data_file = 'numerical_MgDyn_lhs_SM_Local.dat'
+
+method
+id_method = 'UQ_on_surrogate'
+#Define data analysis: UQ study 
+  sampling 
+    sample_type lhs                                                       #latin hypercube sampling study was performed on the global surrogate model                                  
+    samples 100                                                           #lhs -- latin hypercube sampling
+    seed 1987
+    
+ #number of probability levels for joule heating
+    num_probability_levels = 13 
+    probability_levels = 0.01 0.05 0.1:0.1:0.9 0.95 0.99
+
+  	model_pointer = 'surr_model'
+    output verbose   
+              
+
+model
+	id_model = 'surr_model'
+	surrogate global
+	dace_method_pointer = 'DACE'
+	polynomial linear	                                                 #linear regression fit was applied to the training data to construct the global surrogate model
+	  
+method
+	id_method = 'DACE'                                                   #Design and analysis of computer experiments 'DACE' was employed to generate training data 
+	sampling
+    samples = 20                                                         #A sample size of 20 was chosen
+	model_pointer = 'MgDyn_model'
+
+model
+  id_model = 'MgDyn_model'
+  single
+  interface_pointer = 'MgDyn_interface'	  
+  
+  	                
+variables  
+    active uncertain
+    normal_uncertain 2                                                   #Input parameters assumed to vary normally                                              
+    descriptors 'r'  'sigma'                                             #Input parameters, 'r' wire radius, 'sigma' electric conductivity
+    means 2.0   57.59e6
+    std_deviations 0.2 2.0e6
+      
+responses
+#Define ouput parameter
+  response_functions 1
+  descriptors 'joule_heating'                                        
+  no_gradients
+  no_hessians
+
+
+interface
+id_interface = 'MgDyn_interface'                      
+    fork                                                                 #External simulation interface type   
+     asynchronous                                                        #Asynchronous local parallelism applied                                                
+     evaluation_concurrency = 4                                          #4 iterations performed simultaneously   
+     analysis_drivers 'Wire_driver.sh'                                   #Calls the program that interfaces Dakota with Elmer FEM for this test case                      
+	 parameters_file='params.in'                                         #Dakota parameters file    
+     results_file='/Dakota/Gui/Workspace/Project/results.out'            #Dakota results file  
+     file_save                                                           #Saves and tags the results files
+     file_tag
+    
+
