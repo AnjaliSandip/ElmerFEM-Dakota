@@ -6,9 +6,7 @@ Furthermore, the coupled software was validated against a benchmark test.  The p
 The interface program’s primary application area is electromagnetics, but it can be easily extended to other multi-physics applications such as thermo-mechanics, fluid-structure interactions, etc.
 
 Capabilities:
-The interface developed provides a unified open-source computational framework for electromagnetics and data analytics.  
-Its key features include uncertainty quantification, surrogate modeling and parameter studies.  
-This framework enables a richer understanding of model predictions to better design electric machines in a time sensitive manner.  
+The interface developed provides a unified open-source computational framework for electromagnetics and data analytics.  Its key features include uncertainty quantification, surrogate modeling and parameter studies.  This framework enables a richer understanding of model predictions to better design electric machines in a time sensitive manner.  
 
 If you use this program, please cite this repository -- Sandip, A. 2019, ElmerFEM-Dakota, v2.0, Zenodo,  DOI: 10.5281/zenodo.3679502 
 
