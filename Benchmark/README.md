@@ -6,13 +6,12 @@ The objective was to determine the effect of changes in wire radius (+ 10%) and 
 
 
 Analytical model was implemented in Matlab.  The numerical model was built in Elmer FEM using unstructured, hexahedral mesh elements and quadratic linear elements.  
-Elmer FEM’s electromagnetic solver, WhitneyAV, was chosen for this study.  The solver implements classic Lagrange interpolation and edge element basis functions to approximate the scalar 
-and the vector potentials, respectively [2]. 
+Elmer FEM’s electromagnetic solver, WhitneyAV, was chosen for this study.  The solver implements classic Lagrange interpolation and edge element basis functions to approximate the scalar and the vector potentials, respectively [2]. 
 
 
 Latin hypercube sampling study was performed, with a sample size of 400.  The input parameters were distributed normally.  
 Asynchronous local parallelism was implemented, 4 evaluations performed concurrently.  The results from the numerical model were in good agreement with the analytical model as shown in Fig. 2.  
-The numerical model predicts that for the changes in the wire’s material and geometric parameters, there is a 95% probability that the maximum field value for joule heating would vary between 4 and 11 watts.  
+The numerical model predicts that for the changes in the wire’s material and geometric parameters, there is a 95% probability that the maximum field value for joule heating would vary between 0.004 and 0.011 watts.  
 In addition, design and analysis of computer experiments (DACE) technique was employed to generate the training data, a sample size of 50 was chosen.  
 A linear regression fit was applied to the training data to construct the global surrogate model.  Latin hypercube sampling study was then performed on the global surrogate model. 
 Were the results of the sampling study on surrogate model same as the truth? Should I mention the reduction in the CPU time.  
