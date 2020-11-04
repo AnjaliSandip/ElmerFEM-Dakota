@@ -18,7 +18,7 @@ This program is mantained by Anjali Sandip.
  - Elmer version 8.1
  - Operating system: Linux
 
-Contact information: anjali.sandip@und.edu
+Support email for questions: anjali.sandip@und.edu
 
 
 
