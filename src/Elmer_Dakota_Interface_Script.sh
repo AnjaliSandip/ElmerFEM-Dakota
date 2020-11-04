@@ -24,7 +24,7 @@ results=$2
 ############################################################################### 
 ##
 ## Pre-processing Phase: Transfer new set of values for the chosen input 
-## parameters from Dakota to Elmer Fem
+## parameters from Dakota to Elmer FEM
 ##
 ###############################################################################
 
