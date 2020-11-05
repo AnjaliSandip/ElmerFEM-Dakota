@@ -7,7 +7,6 @@ The interface program was validated against a 3D, steady state benchmark test: m
 - Elmer FEM solver: WhitneyAV
 - Dakota/Data analysis: Latin hypercube sampling study, with a sample size of 400; input parameters were distributed normally
 - Parallel programming: Asynchronous local parallelism was implemented, 4 evaluations performed concurrently.
-- Results: Numerical model predictions were in good agreement with the analytical model (refer to results.jpg).  The numerical model predicts that for the changes in the wire’s material and geometric parameters, there is a 95% probability that the maximum field value for joule heating would vary between 0.004 and 0.011 watts.  
 -Surrogate modeling: In addition, design and analysis of computer experiments (DACE) technique was employed to generate training data, a sample size of 50 was chosen.  A linear regression fit was applied to the training data to construct the global surrogate model.  Latin hypercube sampling study was then performed on the global surrogate model. The DACE technique was shown to reduce the total run time by 87% for the benchmark test while maintaining the predictive accuracy of the numerical model.
 
 
