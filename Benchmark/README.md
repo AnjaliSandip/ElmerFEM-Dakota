@@ -4,7 +4,7 @@ The interface program was validated against a 3D, steady state benchmark test: m
 
 - Objective: Determine the effect of changes in wire radius (+ 10%) and electric conductivity (+ 2000000 A/m-V) on maximum field value for joule heating
 - Analytical model: Implemented in MATLAB
-- Numerical model: Implemented in Elmer FEM/WhitneyAV Solver
+- Numerical model: Built in Elmer FEM/WhitneyAV Solver
 - Data analysis: Latin hypercube sampling study performed using Dakota (Sample size: 400; Input parameters distributed normally)
 - Parallel programming: Asynchronous local parallelism implemented in Dakota, 4 evaluations performed concurrently
 - Surrogate model: 
