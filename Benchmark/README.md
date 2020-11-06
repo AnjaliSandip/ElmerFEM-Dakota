@@ -4,13 +4,18 @@ The interface program was validated against a 3D, steady state benchmark test: m
 
 - Objective: Determine the effect of changes in wire radius (+ 10%) and electric conductivity (+ 2000000 A/m-V) on maximum field value for joule heating
 - Analytical model: Implemented in MATLAB
-- Elmer FEM solver: WhitneyAV
-- Dakota/Data analysis: Latin hypercube sampling study, with a sample size of 400; input parameters were distributed normally
-- Parallel programming: Asynchronous local parallelism was implemented, 4 evaluations performed concurrently.
--Surrogate modeling: In addition, design and analysis of computer experiments (DACE) technique was employed to generate training data, a sample size of 50 was chosen.  A linear regression fit was applied to the training data to construct the global surrogate model.  Latin hypercube sampling study was then performed on the global surrogate model. The DACE technique was shown to reduce the total run time by 87% for the benchmark test while maintaining the predictive accuracy of the numerical model.
-
-
-The benchmark test demonstrates the key capabilities of Elmer FEM-Dakota interface program: uncertainty quantification, surrogate modelling and parameter studies. The files required to reproduce the benchmark test are provided in the software repository.
+- Numerical model: Implemented in Elmer FEM/WhitneyAV Solver
+- Data analysis: Latin hypercube sampling study performed using Dakota (Sample size: 400; Input parameters distributed normally)
+- Parallel programming: Asynchronous local parallelism implemented in Dakota, 4 evaluations performed concurrently
+- Surrogate model: 
+    - Design and analysis of computer experiments (DACE) technique was employed to generate training data, a sample size of 50 was chosen  
+    - Linear regression fit was applied to the training data to construct the global surrogate model
+    - Latin hypercube sampling study was then performed on the global surrogate model. 
+- Results:
+    - The results from the numerical model were in good agreement with the analytical model (refer to results.jpg)
+    - Global surrogate model was shown to reduce the total run time by 87% for the benchmark test while maintaining the predictive accuracy of the numerical model.
+    
+The benchmark test demonstrates the key capabilities of Elmer FEM-Dakota interface program: uncertainty quantification, surrogate modelling and parameter studies. 
 
 
 References:
