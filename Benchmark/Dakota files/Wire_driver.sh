@@ -23,19 +23,19 @@ results=$2
 ############################################################################### 
 ##
 ## Pre-processing Phase: Transfer new set of values for the chosen input 
-## parameters from Dakota to Elmer Fem
+## parameters from Dakota to Elmer FEM
 ##
 ###############################################################################
 #Chosen input parameter: wire radius
 dprepro $params wire.template wire.grd
 
-# Transfer Elmer geometry file, wire.grd, with the new wire radius from the Dakota to Elmer workspace
+# Transfer Elmer geometry file, wire.grd, with the new wire radius from Dakota to Elmer workspace
 cp /Dakota/Gui/Workspace/Dakota/Project/wire.grd   /Elmer/Workspace/Project/Folder/wire.grd
 
 #Chosen input parameter: electric conductivity of the wire
 dprepro --inline "@ @" $params case.template case.sif
 
-# Transfer Elmer simulation input file, case.sif, with the new electric conductivity from the Dakota workspace to the Elmer workspace
+# Transfer Elmer simulation input file, case.sif, with the new electric conductivity from Dakota to the Elmer workspace
 cp /Dakota/Gui/Workspace/Dakota/Project/case.sif  /Elmer/Workspace/Project/Folder/case.sif
 
 
@@ -56,7 +56,7 @@ ElmerSolver case.sif
 
 ############################################################################### 
 ##
-## Post-processing Phase: Extract (or calculate) quantities of interest
+##  Post-processing Phase: Extract (or calculate) quantities of interest
 ##  from your simulation's output and write them to a properly-formatted
 ##  Dakota results file.
 ##
