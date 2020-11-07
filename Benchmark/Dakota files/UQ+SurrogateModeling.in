@@ -59,7 +59,7 @@ id_interface = 'MgDyn_interface'
      fork                                                                #External simulation interface type   
      asynchronous                                                        #Asynchronous local parallelism applied                                                
      evaluation_concurrency = 4                                          #4 iterations performed simultaneously   
-     analysis_drivers 'Wire_driver.sh'                                   #Calls the program that interfaces Dakota with Elmer FEM for this test case                      
+     analysis_drivers 'wire.sh'                                          #Calls the program that interfaces Dakota with Elmer FEM for this test case                      
      parameters_file='params.in'                                         #Dakota parameters file    
      results_file='/Dakota/Gui/Workspace/Project/results.out'            #Dakota results file  
      file_save                                                           #Saves and tags the parameters and results files
