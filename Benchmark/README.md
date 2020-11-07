@@ -12,7 +12,7 @@ The interface program was validated against a 3D, steady state benchmark test: m
     - Linear regression fit was applied to the training data to construct the global surrogate model
     - Latin hypercube sampling study was then performed on the global surrogate model. 
 - Results:
-    - The results from the numerical model were in good agreement with the analytical model (refer to results.png)
+    - Numerical model predictions were in good agreement with the analytical model (refer to results.png)
     - Global surrogate model was shown to reduce the total run time by 87% for the benchmark test while maintaining the predictive accuracy of the numerical model.
     
 The benchmark test demonstrates the key capabilities of Elmer FEM-Dakota interface program: uncertainty quantification, surrogate modelling and parameter studies. 
