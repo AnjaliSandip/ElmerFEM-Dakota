@@ -24,7 +24,7 @@ results=$2
 ############################################################################### 
 ##
 ## Pre-processing Phase: Transfer new set of values for the chosen input 
-## parameters from Dakota to Elmer Fem
+## parameters from Dakota to Elmer FEM
 ##
 ###############################################################################
 
@@ -40,14 +40,14 @@ cp /Dakota/Gui/Workspace/Dakota/Project/case.sif   /Elmer/Workspace/Project/Fold
 ##
 ###############################################################################
 
-#Open and run Elmer simulaion for the new velocity
+#Open and run Elmer project for the new velocity
 cd /Elmer/Workspace/Project/Folder/
 ElmerSolver case.sif
 
 
 ############################################################################### 
 ##
-## Post-processing Phase: Extract (or calculate) quantities of interest
+##  Post-processing Phase: Extract (or calculate) quantities of interest
 ##  from your simulation's output and write them to a properly-formatted
 ##  Dakota results file.
 ##
