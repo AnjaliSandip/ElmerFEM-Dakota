@@ -3,7 +3,7 @@ Vortex Shedding (2D, Transient)
 This is a common benchmark problem in fluid-structure interaction problems [1]. 
 
 
- - Objective: Determine the effect of changes in Reynold's number (between 0 and 100) of fluid flow on drag coefficient at the final timestep
+ - Objective: Determine the effect of changes in Reynold's number (between 0 and 100) on drag coefficient at the final timestep
  - Experimental data: Previous literature [1-4]
  - Numerical model: Implemented in Elmer FEM/FlowSolve Solver [5]
  - Data Analysis: Centered parameter study [6] performed using Dakota
