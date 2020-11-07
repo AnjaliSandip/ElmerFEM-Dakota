@@ -29,7 +29,7 @@ results=$2
 ###############################################################################
 
 #Chosen input parameter: Velocity_max at the cylinder inlet
-dprepro $params case.template case.sif
+dprepro $params cylinder.template case.sif
 
 #Transfer the Elmer simulation input file, case.sif, with new boundary conditions from Dakota to Elmer workspace
 cp /Dakota/Gui/Workspace/Dakota/Project/case.sif   /Elmer/Workspace/Project/Folder/case.sif
