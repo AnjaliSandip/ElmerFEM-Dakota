@@ -32,6 +32,7 @@ responses
 
 
 interface
+#Define Elmer FEM-Dakota interface
      fork                                                                #Simulation interface type
      asynchronous                                                        #Asynchronous local parallelism applied  
      evaluation_concurrency = 4                                          #Run 4 function evaluations simultaneously
