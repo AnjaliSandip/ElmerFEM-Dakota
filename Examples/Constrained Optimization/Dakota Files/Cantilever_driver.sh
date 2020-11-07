@@ -23,11 +23,11 @@ results=$2
 ############################################################################### 
 ##
 ## Pre-processing Phase: Transfer new set of values for the chosen input 
-## parameters from Dakota to Elmer Fem
+## parameters from Dakota to Elmer FEM
 ##
 ###############################################################################
 #Chosen input parameter: width and thickness of cantilever beam
-dprepro $params geometry.template beam3d.grd
+dprepro $params cantilever.template beam3d.grd
 
 #Transfer Elmer geometry file, beam3d.grd, with the new set of input values from Dakota to the Elmer workspace
 cp /Dakota/Gui/Workspace/Dakota/Project/beam3d.grd   /Elmer/Workspace/Project/Folder/beam3d.grd
@@ -52,7 +52,7 @@ ElmerSolver case.sif
 
 ############################################################################### 
 ##
-## Post-processing Phase: Extract (or calculate) quantities of interest
+##  Post-processing Phase: Extract (or calculate) quantities of interest
 ##  from your simulation's output and write them to a properly-formatted
 ##  Dakota results file.
 ##
