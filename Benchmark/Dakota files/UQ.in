@@ -35,7 +35,7 @@ interface
      fork                                                                #Simulation interface type
      asynchronous                                                        #Asynchronous local parallelism applied  
      evaluation_concurrency = 4                                          #Run 4 function evaluations simultaneously
-     analysis_drivers 'Wire_driver.sh'                                   #Calls the bash script that interfaces Dakota with Elmer FEM                     
+     analysis_drivers 'wire.sh'                                          #Calls the bash script that interfaces Dakota with Elmer FEM                     
      parameters_file='params.in'                                         #Dakota parameters file
      results_file='/Dakota/Gui/Workspace/Dakota/Project/results.out'     #Dakota results file
      file_save                                                           #Saves and tags the parameters and results files
