@@ -7,7 +7,7 @@ This is a common benchmark problem in fluid-structure interaction problems [1].
  - Experimental data: Previous literature [1-4]
  - Numerical model: Implemented in Elmer FEM/FlowSolve Solver [5]
  - Data Analysis: Centered parameter study [6] performed using Dakota
- - Results: Numerical model predictions were in good agreement with the analytical model, max. discrepancy - 3% (refer to results.png)
+ - Results: Numerical model predictions were in good agreement with the analytical model, max. discrepancy - 3% (refer to results.jpg)
  
    
 References:
