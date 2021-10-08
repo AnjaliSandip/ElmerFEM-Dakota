@@ -1,7 +1,7 @@
 This program, Elmer FEM-Dakota interface, is released under license GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007.
 
 
-An interface program for 2 way coupling between open-source electromagnetic design software, Elmer FEM, and data analytics toolkit, Dakota, has been developed.
+A program for a 2 way interface between open-source electromagnetic design software, Elmer FEM, and data analytics toolkit, Dakota, has been developed.
 Furthermore, the coupled software was validated against a benchmark test.  The program along with benchmark test and other examples have been provided.
 The interface program’s primary application area is electromagnetics, but it can be easily extended to other multi-physics applications such as thermo-mechanics, fluid-structure interactions, etc.
 
